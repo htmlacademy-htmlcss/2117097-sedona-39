@@ -2,6 +2,7 @@
 
 * Студент: [Анна Федорова](https://up.htmlacademy.ru/htmlcss/39/user/2117097).
 * Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
+* Сайт: [Мой проект Седона](https://annabukre.github.io/2117097-sedona-39/)
 
 ---
 
