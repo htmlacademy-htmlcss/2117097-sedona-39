@@ -40,6 +40,7 @@
       </nav>
     </header>
     <main class="main-inner" data-test="main">
+      <div class="main-inner-style">
       <header class="header-title">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
       </header>
@@ -106,6 +107,7 @@
           <button class="catalog-button-reset" type="reset">Сбросить</button>
         </form>
       </section>
+    </div>
       <section class="catalog-products" data-test="catalog">
         <h2 class="catalog-products-title">Найдено гостиниц:<span>38</span></h2>
         <select class="select-control" aria-label="Сортировка">
@@ -205,11 +207,9 @@
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="#" method="post">
-          <p class="newsletter-form-name">
-            <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-              required>
-          </p>
+          <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+            required>
           <button class="button newsletter-button" type="submit">
             <span class="newsletter-subscribe">Подписаться</span>
           </button>

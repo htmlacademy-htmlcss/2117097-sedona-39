@@ -21,6 +21,7 @@ html {
 body {
   font-family: "PT Sans", sans-serif;
   margin: 0;
+  height: 100%;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -36,12 +37,12 @@ body {
   min-height: 100%;
 }
 
-.visually-hidden{
-  display: none;
+.main-index {
+  flex-grow: 1;
 }
 
-.main-container {
-  flex-grow: 1;
+.visually-hidden{
+  display: none;
 }
 
 .page-header {
@@ -60,7 +61,7 @@ body {
 
 .hero {
   color:#333333;
-  background-color: #FFFFFF;
+  background-color: #333333;
   background-image: url("../images/main/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -145,7 +146,7 @@ body {
 
 .newsletter-images {
   color: #FFFFFF;
-  background-color: #FFFFFF;
+  background-color: #82B3D3;
   background-image: url("../images/main/subscribe.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -176,8 +177,12 @@ body {
 }
 
 .main-inner {
+  flex-grow: 1;
+}
+
+.main-inner-style {
   background-image: url("../images/main/blurheadersedona.jpg");
-  background-color: #FFFFFF;
+  background-color: #333333;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -223,7 +228,7 @@ body {
 .catalog-button-reset {
   font-family: "PT Sans", sans-serif;
   background: none;
-  border: 0px;
+  border: 0;
 }
 
 .select-control {
@@ -286,7 +291,7 @@ body {
 }
 
 .pagination-link {
-  color: #ffffff;
+  color: #FFFFFF;
   background-color: #82B3D3;
   text-decoration: none;
   font-size: 20px;
@@ -296,161 +301,6 @@ body {
 
 .pagination-dots {
   color: #FFFFFF;
-  background-color: #82B3D3;
-}
-
-.pagination-current {
-  color: #000000;
-  background-color: #F2F2F2;
-}
-
-.newsletter-images {
-  color: #FFFFFF;
-  background-color: #FFFFFF;
-  background-image: url("../images/main/subscribe.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-
-.button {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #756157;
-  text-decoration: none;
-}
-
-.newsletter-button {
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
-  text-align: center;
-  color: #FFFFFF;
-  background-color: #82B3D3;
-  text-decoration: none;
-  border: #82B3D3;
-  text-transform: uppercase;
-}
-
-.main-inner {
-  background-image: url("../images/main/blurheadersedona.jpg");
-  background-color: #FFFFFF;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-
-.inner-header-title {
-  font-size: 60px;
-  line-height: 78px;
-  font-weight: 700;
-  text-align: left;
-  color: #FFFFFF;
-}
-
-.breadcrumbs {
-  font-size: 16px;
-  color: #FFFFFF;
-}
-
-.catalog-filter-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #FFFFFF;
-}
-
-.catalog-filter-list {
-  line-height: 23px;
-  font-weight: 400;
-  color: #FFFFFF;
-}
-
-.catalog-button-submit {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-  color: #FFFFFF;
-  background-color: #82B3D3;
-  text-transform: uppercase;
-  border: 0;
-}
-
-.catalog-button-reset {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  background: none;
-  border: 0px;
-}
-
-.select-control {
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #333333;
-  background-color: #FFFFFF;
-}
-
-.catalog-products-title {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.product-card-link {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  color: #000000;
-  text-decoration: none;
-}
-
-.product-card-button {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #756157;
-  text-decoration: none;
-}
-
-.button-favorite {
-  background-color: #82B3D3;
-  text-decoration: none;
-  border: 0;
-}
-
-.product-card-rating {
-  text-align: right;
-  background-color: #F2F2F2;
-}
-
-.pagination {
-  background-color: #ffffff;
-}
-
-.pagination-link {
-  color: #ffffff;
-  background-color: #82B3D3;
-  text-decoration: none;
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 700;
-}
-
-.pagination-dots {
-  color: #ffffff;
   background-color: #82B3D3;
 }
 
