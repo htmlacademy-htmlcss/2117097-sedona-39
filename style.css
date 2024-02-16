@@ -304,14 +304,6 @@ body {
   background-color: #F2F2F2;
 }
 
-.newsletter-images {
-  color: #FFFFFF;
-  background-color: #FFFFFF;
-  background-image: url("../images/main/subscribe.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-}
-
 .button {
   font-size: 16px;
   line-height: 20px;
