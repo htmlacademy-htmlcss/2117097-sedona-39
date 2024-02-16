@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2) format(.woff2);
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
   font-display: swap;
 }
 
@@ -10,21 +10,42 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2) format(.woff2);
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
+}
+
+html {
+  height: 100%;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background-color: #F2F2F2;
+}
+
+.container {
   background-color: #FFFFFF;
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.visually-hidden{
+  display: none;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .page-header {
   color: #000000;
-  background-color: #ffffff;
 }
 
 .navigation-link {
@@ -36,9 +57,10 @@ body {
   color: inherit;
 }
 
+
 .hero {
   color:#333333;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   background-image: url("../images/main/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -114,11 +136,180 @@ body {
 }
 
 .newsletter {
-background-color: #FFFFFF;
-background-image: url("../images/main/subscribe.jpg");
-background-size: 100% auto;
-background-repeat: no-repeat;
-text-align: center;
+  color: #000000;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  }
+
+.newsletter-images {
+  color: #FFFFFF;
+  background-color: #FFFFFF;
+  background-image: url("../images/main/subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-decoration: none;
+}
+
+.newsletter-button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-decoration: none;
+  border: #82B3D3;
+  text-transform: uppercase;
+}
+
+.main-inner {
+  background-image: url("../images/main/blurheadersedona.jpg");
+  background-color: #FFFFFF;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.catalog-filter-list {
+  line-height: 23px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.catalog-button-submit {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.catalog-button-reset {
+  font-family: "PT Sans", sans-serif;
+  background: none;
+  border: 0px;
+}
+
+.select-control {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.catalog-products-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.product-card-link {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-card-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-decoration: none;
+}
+
+.button-favorite {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-decoration: none;
+  border: 0;
+}
+
+.product-card-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: right;
+  background-color: #F2F2F2;
+  text-decoration: none;
+  border: 0;
+}
+
+.pagination-link {
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.pagination-dots {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+.newsletter-images {
+  color: #FFFFFF;
+  background-color: #FFFFFF;
+  background-image: url("../images/main/subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .button {
@@ -185,7 +376,7 @@ text-align: center;
   color: #FFFFFF;
   background-color: #82B3D3;
   text-transform: uppercase;
-  border: 0px;
+  border: 0;
 }
 
 .catalog-button-reset {
@@ -235,25 +426,14 @@ text-align: center;
 }
 
 .button-favorite {
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
   background-color: #82B3D3;
   text-decoration: none;
-  border: 0px;
+  border: 0;
 }
 
 .product-card-rating {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
   text-align: right;
   background-color: #F2F2F2;
-  text-decoration: none;
-  border: 0px;
 }
 
 .pagination {
@@ -277,5 +457,4 @@ text-align: center;
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
-  ;
 }
