@@ -49,6 +49,27 @@ body {
   color: #000000;
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-logo {
+  margin-left: 70px;
+}
+
+.navigation-list {
+  margin: 0 30px;
+  padding: 20px 16px;
+  width: 439px;
+}
+
+.navigation-users {
+  max-width: 308px;
+  margin-left: auto;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 24px;
@@ -58,7 +79,6 @@ body {
   color: inherit;
 }
 
-
 .hero {
   color:#333333;
   background-color: #333333;
@@ -67,16 +87,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.advantages-list {
-  text-align: center;
-}
-
-.advantages-title {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
 
 .lead {
   font-size: 30px;
@@ -87,18 +97,21 @@ body {
   text-transform: uppercase;
 }
 
-.advantages {
+.title-text {
   text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
 }
 
-
-.advantages-item:nth-child(even) {
-  background-color: #83B3D31F;
+.navigation-like {
+  background-color: #7DB54F;
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 10px;
+  font-weight: 400;
 }
 
-.advantages-item:nth-child(3n) {
-  background-color: #83B3D333;
-}
 
 .advantages-item-img {
   color:#FFFFFF;
@@ -106,10 +119,28 @@ body {
 }
 
 .advantages-title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-.infrastructure {
+.advantages-description {
+  text-align: center;
+}
+
+.advantages-item:nth-child(even) {
+  background-color: #83B3D31F;
+  color: #000000;
+}
+
+.advantages-item:nth-child(3n) {
+  background-color: #83B3D333;
+  color: #000000;
+}
+
+.infrastructure-list {
   text-align: center;
 }
 
@@ -144,6 +175,13 @@ body {
   text-align: center;
   }
 
+.newsletter-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  }
+
 .newsletter-images {
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -176,6 +214,31 @@ body {
   text-transform: uppercase;
 }
 
+.page-footer {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.social-list {
+  width: 150px;
+  margin-left: 70px;
+  margin-right: 42px;
+}
+
+.number-phone {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+}
+
+.logo-img {
+  margin-left: auto;
+  max-width: 140px;
+}
+
 .main-inner {
   flex-grow: 1;
 }
@@ -187,12 +250,17 @@ body {
   background-repeat: no-repeat;
 }
 
+.catalog-filter {
+  display: flex;
+}
+
 .inner-header-title {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
   text-align: left;
   color: #FFFFFF;
+
 }
 
 .breadcrumbs {
@@ -227,8 +295,20 @@ body {
 
 .catalog-button-reset {
   font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
   background: none;
   border: 0;
+}
+
+.range-input {
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .select-control {
@@ -240,6 +320,10 @@ body {
   background-color: #FFFFFF;
 }
 
+.catalog-products {
+  margin-left: 70px;
+}
+
 .catalog-products-title {
   font-size: 30px;
   line-height: 36px;
@@ -248,12 +332,19 @@ body {
   text-transform: uppercase;
 }
 
+
 .product-card-link {
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+}
+
+.product-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
 }
 
 .product-card-button {
@@ -280,11 +371,24 @@ body {
   border: 0;
 }
 
+.button-favorite-selected {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #7DB54F;
+  text-decoration: none;
+  border: 0;
+}
+
 .product-card-rating {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  text-align: right;
+  text-align: center;
   background-color: #F2F2F2;
   text-decoration: none;
   border: 0;
