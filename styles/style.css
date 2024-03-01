@@ -74,15 +74,6 @@ body {
   align-items: center;
 }
 
-.navigation-users {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-  max-width: 290px;
-  margin-left: auto;
-}
 
 .navigation-link {
   font-size: 20px;
@@ -95,10 +86,22 @@ body {
   display: block;
 }
 
+.navigation-users {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  max-width: 290px;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
 .navigation-logo {
   align-self: flex-start;
   width: 138px;
   margin-bottom: -6px;
+  z-index: 1;
 }
 
 .hero {
@@ -108,13 +111,13 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 
 .logo {
   display: block;
   margin: 0 auto;
-  padding-bottom: 82px;
 }
 
 .lead {
@@ -256,6 +259,7 @@ body {
   flex-grow: 1;
   width: 400px;
   padding: 81px 85px;
+  box-sizing: border-box;
 }
 
 .infrastructure-item:nth-child(odd) {
@@ -440,6 +444,7 @@ body {
   line-height: 24px;
   font-weight: 700;
   color: #FFFFFF;
+
 }
 
 .catalog-filter-list {
@@ -524,9 +529,28 @@ body {
 }
 
 .product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
   padding: 0;
   margin: 0;
+  margin-bottom: 40px;
   list-style-type: none;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 340px;
+}
+
+.product-card-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 20px;
+  row-gap: 16px;
 }
 
 .product-card-link {
@@ -543,6 +567,19 @@ body {
   font-weight: 700;
 }
 
+.product-card-type {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 140px;
+}
+
+.product-card-price {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 140px;
+  text-align: right;
+}
+
 .product-card-button {
   font-size: 16px;
   line-height: 20px;
@@ -552,6 +589,8 @@ body {
   color: #FFFFFF;
   background-color: #756157;
   text-decoration: none;
+  width: 140px;
+  padding: 8px 26px;
 }
 
 .button-favorite {
@@ -565,6 +604,8 @@ body {
   background-color: #82B3D3;
   text-decoration: none;
   border: 0;
+  width: 140px;
+  padding: 8px 20px;
 }
 
 .button-favorite-selected {
@@ -617,6 +658,7 @@ body {
   min-width: 60px;
   padding: 8px 14px;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .pagination-dots {
