@@ -97,6 +97,22 @@ body {
   justify-content: flex-end;
 }
 
+.serch-icon {
+  background-image: url("../images/icons/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 22px 12px;
+  width: 20px;
+}
+
+.favorites-icon {
+  background-image: url("../images/icons/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 24px 12px 23px;
+  width: 20px;
+}
+
 .navigation-logo {
   align-self: flex-start;
   width: 138px;
@@ -287,6 +303,7 @@ body {
   text-transform: uppercase;
   padding: 8px 50px;
   margin-bottom: 96px;
+  border-radius: 4px;
 
 }
 
@@ -331,6 +348,13 @@ body {
   text-decoration: none;
 }
 
+.navigation-button {
+  padding: 8px 34px;
+  border-radius: 4px;
+  width: 160px;
+  margin-left: 20px;
+}
+
 .newsletter-button {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
@@ -344,10 +368,17 @@ body {
   text-transform: uppercase;
   padding: 8px 50px;
   margin: 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .field {
-  padding: 14px 345px 14px 20px;
+  width: 452px;
+  padding: 14px 20px;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 4px 0 0 4px;
 }
 
 .page-footer {
@@ -494,6 +525,8 @@ body {
   background-color: #FFFFFF;
   width: 292px;
   padding: 14px 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
 }
 
 .view-buttons {
@@ -539,18 +572,14 @@ body {
 }
 
 .product-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  width: 300px;
+  gap: 16px;
+  grid-template-columns: 140px 140px;
   padding: 20px;
-  width: 340px;
-}
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
 
-.product-card-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  column-gap: 20px;
-  row-gap: 16px;
 }
 
 .product-card-link {
@@ -559,6 +588,7 @@ body {
   font-weight: 700;
   color: #000000;
   text-decoration: none;
+  grid-column: 1/-1;
 }
 
 .product-card-title {
@@ -591,6 +621,7 @@ body {
   text-decoration: none;
   width: 140px;
   padding: 8px 26px;
+  box-sizing: border-box;
 }
 
 .button-favorite {
@@ -606,6 +637,7 @@ body {
   border: 0;
   width: 140px;
   padding: 8px 20px;
+  box-sizing: border-box;
 }
 
 .button-favorite-selected {
@@ -629,6 +661,8 @@ body {
   background-color: #F2F2F2;
   text-decoration: none;
   border: 0;
+  margin: 0;
+  padding: 9px 22px 8px 23px;
 }
 
 .pagination {
