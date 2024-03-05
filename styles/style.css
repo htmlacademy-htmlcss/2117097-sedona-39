@@ -443,6 +443,12 @@ body {
 .catalog-filter {
   display: flex;
   margin: 0 auto;
+  width: 1060px;
+}
+
+.infrastructure {
+  width: 150px;
+  padding-right: 70px;
 }
 
 .inner-header-title {
