@@ -79,6 +79,7 @@ body {
 
 
 .navigation-link {
+  position: relative;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -106,21 +107,26 @@ body {
   justify-content: flex-end;
 }
 
-.serch-icon {
-  background-image: url("../images/icons/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 22px 12px;
-  width: 20px;
+
+.navigation-serch-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .favorites-icon {
-  background-image: url("../images/icons/heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 24px 12px 23px;
-  width: 20px;
-  position: relative;
+  padding: 22px;
+}
+
+.navigation-favorites-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .navigation-like {
@@ -1466,7 +1472,7 @@ input:active + .input-radio::before,
   text-decoration: none;
   min-width: 60px;
   min-height: 60px;
-  padding: 8px 14px;
+  padding: 10px 14px;
   border-radius: 4px;
   box-sizing: border-box;
 
