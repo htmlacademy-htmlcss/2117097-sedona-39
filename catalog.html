@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
     <div class="container">
@@ -59,7 +61,7 @@
           </li>
         </ol>
       </nav>
-      <section class="filters" data-test=" filter">
+      <section class="filters" data-test="filter">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group infrastructure-filter">
@@ -67,20 +69,20 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="pool" checked>
-                  Бассейн
+                  <input class="control-input visually-hidden" type="checkbox" name="pool" checked>
+                  <span class="control-input-img input-checkbox">Бассейн</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked>
-                  Парковка
+                  <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                  <span class="control-input-img input-checkbox">Парковка</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="wifi">
-                  Wi-Fi
+                  <input class="control-input visually-hidden" type="checkbox" name="wifi">
+                  <span class="control-input-img input-checkbox">Wi-Fi</span>
                 </label>
               </li>
             </ul>
@@ -90,20 +92,20 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="housing-type" value="hotel" checked>
-                  Гостиница
+                  <input class="control-input visually-hidden" type="radio" name="housing-type" value="hotel" checked>
+                  <span class="control-input-img input-radio">Гостиница</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="housing-type" value="motel" checked>
-                  Мотель
+                  <input class="control-input visually-hidden" type="radio" name="housing-type" value="motel">
+                  <span class="control-input-img input-radio">Мотель</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="housing-type" value="apartment">
-                  Аппартаменты
+                  <input class="control-input visually-hidden" type="radio" name="housing-type" value="apartment">
+                  <span class="control-input-img input-radio">Апартаменты</span>
                 </label>
               </li>
             </ul>
@@ -119,8 +121,17 @@
                 <span class="range-cost-text">до</span>
                 <input class="range-input max-price" type="number" value="9000" name="max-price">
               </label>
-
             </div>
+          <div class="range-scale">
+            <div class="range-bar">
+              <button class="range-toggle toggle-min" type="button">
+                <span class="visually-hidden">Минимальная цена</span>
+              </button>
+              <button class="range-toggle toggle-max" type="button">
+                <span class="visually-hidden">Максимальная цена</span>
+              </button>
+            </div>
+          </div>
           </fieldset>
           <div class="catalog-filter-button">
           <button class="catalog-button-submit button-not-selected" type="submit">Применить</button>

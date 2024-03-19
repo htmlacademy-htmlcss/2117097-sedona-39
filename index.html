@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
   <body>
     <div class="container">
@@ -79,7 +81,7 @@
           </li>
           <li class="advantages-item advantages-item-img">
             <div class="advantages-item-wrap-img">
-            <h3 class="advantages-title light-line">Там есть мост дьявола</h3>
+            <h3 class="advantages-title light-line">Там есть <br> мост дьявола</h3>
             <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
             <img class="advantages-img-left" src="images/main/devilbridge.jpg" width="800" height="385" alt="Мост дьявола в Седоне">
@@ -95,15 +97,15 @@
         <ul class="infrastructure-list">
           <li class="infrastructure-item">
             <h3 class="infrastructure-title infrastructure-title-icon house">Жильё</h3>
-            <p class="infrastructure-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <p class="infrastructure-description">Рекомендуем пожить <br> в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="infrastructure-item">
             <h3 class="infrastructure-title infrastructure-title-icon food">Еда</h3>
-            <p class="infrastructure-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь</p>
+            <p class="infrastructure-description">Всегда заказывайте <br> топовый фирменный бургер, вы не разочаруетесь</p>
           </li>
           <li class="infrastructure-item">
             <h3 class="infrastructure-title infrastructure-title-icon souvenirs">Сувениры</h3>
-            <p class="infrastructure-description">Не только китайского, но и настоящего местного производства!</p>
+            <p class="infrastructure-description">Не только китайского,<br> но и настоящего местного производства!</p>
           </li>
         </ul>
       </section>
@@ -171,6 +173,74 @@
           </svg>
       </a>
     </footer>
+  </div>
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+        <svg class="modal-svg" aria-hidden="true" focusabe="fales" width="14" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.3928 1.29231L13.1005 0L7.39282 5.70769L1.68513 0L0.392822 1.29231L6.10051 7L0.392822 12.7077L1.68513 14L7.39282 8.29231L13.1005 14L14.3928 12.7077L8.68513 7L14.3928 1.29231Z" fill="currentcolor"/>
+          </svg>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="arrival-date">
+            <label class="field-modal arrival" for="arrival">Дата Заезда:</label>
+            <input class="arrival-date-form modal-form" type="text" id="arrival" name="arrival" placeholder="Укажите дату">
+            <strong class="error-text">Мы не можем отправить вас в прошлое.</strong>
+          </div>
+          <div class="departure-date">
+            <label class="field-modal departure">Дата Выезда:</label>
+            <input class="departure-date-form modal-form" type="text" id="departure" name="departure" placeholder="Укажите дату">
+            <strong class="text-booked">На эти даты есть свободные номера. Пока есть.</strong>
+          </div>
+          <div class="adults-settings">
+            <label class="field-modal adults" for="adults">Взрослые:</label>
+            <div class="settings-choice adults-settings-choice">
+              <button class="minus signs" type="button">
+                <svg aria-hidden="true" focusabe="fales" width="15" height="2" viewBox="0 0 15 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.392822 0L0.392822 2L14.3928 2V0L0.392822 0Z" fill="black"/>
+                  </svg>
+              </button>
+              <input class="adults-settings-form modal-form" type="number" id="adults" name="adults" value="2" required>
+              <button class="plus signs" type="button">
+                <svg aria-hidden="true" focusabe="fales" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="black"/>
+                  </svg>
+              </button>
+            </div>
+          </div>
+            <div class="children-settings">
+            <span class="children-form-discription">
+              <label class="field-modal children" for="children">Дети:</label>
+              <span class="form-discription">
+                <button class="discription-toggle" type="button">
+                  <svg class="modal-svg" aria-hidden="true" focusabe="fales" width="3" height="12" viewBox="0 0 3 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.393066 0H2.39307V2H0.393066V0ZM2.39307 12H0.393066V3H2.39307V12Z" fill="white"/>
+                    </svg>
+                </button>
+                <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            </span>
+            <div class="settings-choice children-settings-choice">
+              <button class="minus signs" type="button">
+                <svg aria-hidden="true" focusabe="fales" width="15" height="2" viewBox="0 0 15 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.392822 0L0.392822 2L14.3928 2V0L0.392822 0Z" fill="black"/>
+                  </svg>
+              </button>
+              <input class="children-settings-form modal-form" type="number" id="children" name="children" value="2" required>
+              <button class="plus signs" type="button">
+                <svg aria-hidden="true" focusabe="fales" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="black"/>
+                  </svg>
+              </button>
+            </div>
+          </div>
+          <button class="search-modal-button" type="submit">Найти</button>
+        </form>
+      </section>
+    </div>
   </div>
   </body>
 </html>
