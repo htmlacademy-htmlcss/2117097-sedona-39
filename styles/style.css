@@ -77,7 +77,6 @@ body {
   z-index: 5;
 }
 
-
 .navigation-link {
   position: relative;
   font-size: 20px;
@@ -106,7 +105,6 @@ body {
   margin-left: auto;
   justify-content: flex-end;
 }
-
 
 .navigation-serch-icon {
   position: absolute;
@@ -204,7 +202,6 @@ body {
   margin-bottom: 64px;
 }
 
-
 .newsletter-description {
   margin-top: 20px;
   margin-bottom: 54px;
@@ -230,7 +227,6 @@ body {
   padding: 112px 85px;
 }
 
-
 .advantages-item {
   width: 400px;
   height: 385px;
@@ -242,7 +238,6 @@ body {
   display: flex;
   justify-content: space-between;
   width: 1200px;
-
 }
 
 .advantages-img-left {
@@ -295,13 +290,13 @@ body {
 }
 
 .infrastructure-title {
- text-transform: uppercase;
- color: #000000;
- font-size: 24px;
- line-height: 28px;
- font-weight: 700;
- margin: 0;
- margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #000000;
+   font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .infrastructure-description {
@@ -334,7 +329,6 @@ body {
 .infrastructure-item:nth-child(odd) {
   background-color: #83B3D31F;
 }
-
 
 .infrastructure-title-icon::before {
   content: "";
@@ -381,7 +375,6 @@ body {
   background-color: #615048;
 }
 
-
 .information-button:focus {
   background-color: #615048;
 }
@@ -423,7 +416,7 @@ body {
   font-weight: 400;
   text-align: center;
   padding: 96px 258px 104px;
-  }
+}
 
 .newsletter-title {
   font-size: 30px;
@@ -431,13 +424,13 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0;
-  }
+}
 
 .newsletter-images {
   color: #FFFFFF;
   background-color: #82B3D3;
   background-image: url("../images/main/subscribe.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -498,7 +491,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 40px 70px 30px;
-
 }
 
 .social-list {
@@ -543,8 +535,6 @@ body {
   color: #000000;
 }
 
-
-
 .logo-img-link:hover,
 .logo-img-link:focus {
   color: #756157;
@@ -581,7 +571,6 @@ body {
 .navigation-link:active {
   color: #7561574D;
 }
-
 
 .modal-container {
   position: fixed;
@@ -637,7 +626,6 @@ body {
   outline: 3px solid #83B3D3;
   background-color: #E6E6E6;
 }
-
 
 .modal-title {
   font-family: "PT Sans", sans-serif;
@@ -722,7 +710,6 @@ body {
   background-color: #E6E6E6;
 }
 
-
 .search-form {
   display: flex;
   justify-content: space-between;
@@ -782,7 +769,6 @@ body {
   opacity: 100%;
   outline: 3px solid #83B3D3;
 }
-
 
 .minus {
   left: 10px;
@@ -899,7 +885,7 @@ body {
 }
 
 .main-inner-style {
-  background-image: url("../images/main/blurheadersedona.jpg");
+  background-image: url("../images/main/blur-header-sedona.jpg");
   background-color: #333333;
   background-size: cover;
   background-repeat: no-repeat;
@@ -920,7 +906,6 @@ body {
 .inner-header {
   width: 1060px;
   margin-bottom: 40px;
-
 }
 
 .catalog-filter {
@@ -979,6 +964,14 @@ body {
   margin: 0;
 }
 
+.breadcrumbs-item:hover {
+  opacity: 60%;
+}
+
+.breadcrumbs-item:active {
+  opacity: 30%;
+}
+
 .breadcrumbs-link {
   display: block;
   font-size: 16px;
@@ -986,7 +979,6 @@ body {
   color: #FFFFFF;
   text-decoration: none;
 }
-
 
 .catalog-filter-cost {
   border: 0;
@@ -1028,14 +1020,13 @@ body {
   margin-right: 140px;
 }
 
-
 .control-input-img {
   display: flex;
   align-items: center;
 }
 
 .input-checkbox::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -1045,7 +1036,7 @@ body {
 }
 
 .input-radio::before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -1318,7 +1309,6 @@ input:disabled + .input-radio {
   list-style-type: none;
 }
 
-
 .view-buttons-check {
   background-image: url("../images/icons/tile.svg");
   background-repeat: no-repeat;
@@ -1562,7 +1552,6 @@ input:disabled + .input-radio {
   padding: 10px 14px;
   border-radius: 4px;
   box-sizing: border-box;
-
 }
 
 .pagination-link:not(.pagination-current):hover,
